@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "first_name": "Joko",
+    "last_name": "Santoso",
+    "email": "jokosantoso@mail.com",
+    "gender": "male",
+    "birth_date": "28-06-2005"
+  },
+  {
+    "id": 2,
+    "first_name": "Lukman",
+    "last_name": "Riki",
+    "email": "lukmanriki@mail.com",
+    "gender": "male",
+    "birth_date": "13-04-2004"
+  },
+  {
+    "id": 3,
+    "first_name": "Lisa",
+    "last_name": "Killa",
+    "email": "lisakilla@mail.com",
+    "gender": "select",
+    "birth_date": "2023-07-13"
+  },
+  {
+    "id": 7,
+    "first_name": "oki",
+    "last_name": "lia",
+    "email": "lialia@email.com",
+    "gender": "Female",
+    "birth_date": "2023-11-25"
+  },
+  {
+    "id": 8,
+    "first_name": "Lukman",
+    "last_name": "Riski",
+    "email": "lukmanriski@mail.com",
+    "gender": "Female",
+    "birth_date": "2023-10-12"
+  },
+  {
+    "id": 9,
+    "first_name": "Nisa",
+    "last_name": "Akhsari",
+    "email": "nisaakhsari@mail.com",
+    "gender": "female",
+    "birth_date": "2023-03-02"
+  }
+]
