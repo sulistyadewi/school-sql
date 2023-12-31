@@ -1,0 +1,20 @@
+[
+  {
+    "first_name": "Keisha",
+    "last_name": "Azzahra",
+    "email": "keishaazzahra@mail.com",
+    "gender": "female"
+  },
+  {
+    "first_name": "Haikal",
+    "last_name": "Firdaus",
+    "email": "haikalfirdaus@mail.com",
+    "gender": "male"
+  },
+  {
+    "first_name": "Nayla",
+    "last_name": "Syifa",
+    "email": "naylasyifa@mail.com",
+    "gender": "female"
+  }
+]

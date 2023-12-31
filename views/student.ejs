@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <title>Student</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      h1 {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+        margin: auto;
+      }
+      th {
+        background-color: darkcyan;
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 10px;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      table tr th.action {
+        padding: 0px 65px;
+      }
+      table tr td a {
+        text-decoration: none;
+      }
+      table tr td a.edit {
+        color: blue;
+      }
+      table tr td a.remove {
+        color: red;
+      }
+      table tr td a:hover {
+        text-decoration: underline;
+      }
+      span {
+        font-weight: bold;
+        color: rgb(172, 172, 172);
+      }
+      button {
+        background-color: blue;
+        font-style: none;
+        width: 5rem;
+        height: 2rem;
+        margin-left: 57rem;
+        margin-top: 10px;
+        border-radius: 8px;
+      }
+      button a {
+        color: white;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student</h1>
+    <table>
+      <th>
+        <tr>
+          <th>ID</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Mail</th>
+          <th>Gender</th>
+          <th>Birth Date</th>
+          <th class="action"></th>
+        </tr>
+      </th>
+      <tbody>
+        <% for (let i = 0; i < data.length; i++) { %>
+        <tr>
+          <td><%= data[i].id %></td>
+          <td><%= data[i].first_name %></td>
+          <td><%= data[i].last_name %></td>
+          <td><%= data[i].email %></td>
+          <td><%= data[i].gender %></td>
+          <td><%= data[i].birth_date%></td>
+          <td>
+            <a href="/student/<%= data[i].id %>/edit" class="edit">Edit</a>
+            <span>|</span>
+            <a href="/student/<%= data[i].id %>/delete" class="remove"
+              >Remove</a
+            >
+          </td>
+        </tr>
+        <% } %>
+      </tbody>
+    </table>
+    <button><a href="/student/add">add</a></button>
+  </body>
+</html>

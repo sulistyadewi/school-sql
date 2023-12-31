@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapel</title>
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      table {
+        border-collapse: collapse;
+        width: 50%;
+        margin: auto;
+      }
+      th {
+        background-color: rgba(91, 137, 197, 0.822);
+      }
+      th,
+      td {
+        text-align: left;
+        padding: 10px;
+      }
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mapel</h1>
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Mapel</th>
+      </tr>
+      <% student.foreach(item => { %>
+      <tr>
+        <td>1</td>
+        <td><%= item.mapel %></td>
+      </tr>
+      <%})%>
+    </table>
+  </body>
+</html>

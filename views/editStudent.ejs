@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .container {
+        background-color: darkcyan;
+        margin: auto;
+        border-radius: 5px;
+        width: 50%;
+        margin-top: 30px;
+      }
+      form {
+        padding: 20px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+      label {
+        margin-top: 6px;
+      }
+      input {
+        margin-top: 6px;
+        height: 3rem;
+        border-radius: 5px;
+        outline: white;
+        padding-left: 3px;
+      }
+      .button-add {
+        margin-top: 15px;
+        background-color: white;
+        color: black;
+        outline: blue;
+        width: 6rem;
+        height: 2.5rem;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <form action="/student/<%= students.id %>/edit" method="POST">
+        <div>
+          <label for="">First Name</label>
+          <input
+            type="text"
+            name="first_name"
+            value="<%= students.first_name %>"
+          />
+        </div>
+        <div>
+          <label for="">Last Name</label>
+          <input
+            type="text"
+            name="last_name"
+            value="<%= students.last_name %>"
+          />
+        </div>
+        <div>
+          <label for="">Email</label>
+          <input type="email" name="email" value="<%= students.email %>" />
+        </div>
+        <div>
+          <label for="">Gender</label>
+          <select name="gender" id="gender" >
+            <!-- <option value="select">Choose One</option> -->
+            <option value="Male"<%= students.gender==='Male'?'selected':'' %>>Male</option>
+            <option value="Female"<%= students.gender==='Female'?'selected':'' %>>Female</option>
+          </select>
+        </div>
+        <div>
+          <label for="">Birth Date</label>
+          <input
+            type="date"
+            name="birth_date"
+            id="date"
+            value="<%= students.birth_date %>"
+          />
+        </div>
+        <input class="button-edit" type="submit" value="Edit Student" />
+      </form>
+    </div>
+  </body>
+</html>
